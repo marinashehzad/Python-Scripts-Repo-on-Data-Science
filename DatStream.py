@@ -125,7 +125,7 @@ print(pops_list)
 
 # Use list comp to create new dataframe column 'Total Urban Population'
 
-df_pop_ceb['Total Urban Population'] = [int(tup[0] * tup[1]) for tup in pops_list]
+df_pop_ceb['Total Urban Population'] = [int(tup[0] * tup[1]*0.01) for tup in pops_list]
 
 # Plot urban population data
 
